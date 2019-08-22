@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		694B8F3D22DD903200AD97C2 /* Quick.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 69D7705B22DD8AD200378EE1 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		694B8F3E22DD903800AD97C2 /* Nimble.framework in Copy Carthage Frameworks */ = {isa = PBXBuildFile; fileRef = 69D7705A22DD8AD200378EE1 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		694B8F5B22DD959C00AD97C2 /* NearByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F5A22DD959C00AD97C2 /* NearByViewController.swift */; };
+		694B8F6422DD95AE00AD97C2 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6222DD95AE00AD97C2 /* Tram.swift */; };
+		694B8F6522DD95AE00AD97C2 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6322DD95AE00AD97C2 /* Token.swift */; };
+		694B8F6D22DD95C500AD97C2 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6822DD95C500AD97C2 /* APIEndpoints.swift */; };
+		694B8F6E22DD95C500AD97C2 /* TokenClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6A22DD95C500AD97C2 /* TokenClient.swift */; };
+		694B8F6F22DD95C500AD97C2 /* TramClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6B22DD95C500AD97C2 /* TramClient.swift */; };
+		694B8F7222DD95F400AD97C2 /* NearBy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694B8F7022DD95F400AD97C2 /* NearBy.storyboard */; };
+		694B8F7622DD962400AD97C2 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F7422DD962400AD97C2 /* AppPreferences.swift */; };
+		694B8F7722DD962400AD97C2 /* DotNetDateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F7522DD962400AD97C2 /* DotNetDateConverter.swift */; };
+		694B8F7C22DD963200AD97C2 /* TramsNotFoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694B8F7822DD963200AD97C2 /* TramsNotFoundTableViewCell.xib */; };
+		694B8F7D22DD963200AD97C2 /* TramsNotFoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F7922DD963200AD97C2 /* TramsNotFoundTableViewCell.swift */; };
+		694B8F7E22DD963200AD97C2 /* NearByTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694B8F7A22DD963200AD97C2 /* NearByTableViewCell.xib */; };
+		694B8F7F22DD963200AD97C2 /* NearByTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F7B22DD963200AD97C2 /* NearByTableViewCell.swift */; };
+		694B8F8322DD964300AD97C2 /* NearByViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F8122DD964200AD97C2 /* NearByViewControllerSpec.swift */; };
+		694B8F8B22DDB5AC00AD97C2 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F8822DDB5AC00AD97C2 /* UIViewController+Additions.swift */; };
+		694B8F8C22DDB5AC00AD97C2 /* ViewController+NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F8922DDB5AC00AD97C2 /* ViewController+NavigationBar.swift */; };
+		694B8F8D22DDB5AC00AD97C2 /* ViewController+DisplayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F8A22DDB5AC00AD97C2 /* ViewController+DisplayError.swift */; };
+		694B8F9222DDB7B600AD97C2 /* Theme+Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F9122DDB7B600AD97C2 /* Theme+Main.swift */; };
+		694B8F9422DDB89F00AD97C2 /* UIApplication+StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F9322DDB89F00AD97C2 /* UIApplication+StatusBarView.swift */; };
+		694B8F9822DDBE8A00AD97C2 /* Mission Gothic Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 694B8F9722DDBE3100AD97C2 /* Mission Gothic Regular.otf */; };
+		694B8F9B22DDC5E400AD97C2 /* CountableEnumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F9A22DDC5E400AD97C2 /* CountableEnumeration.swift */; };
+		694B8F9D22DDC97D00AD97C2 /* NearByViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F9C22DDC97D00AD97C2 /* NearByViewModel.swift */; };
+		6951297822DD64B4002E4A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951297722DD64B4002E4A73 /* AppDelegate.swift */; };
+		6951297F22DD64B4002E4A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6951297E22DD64B4002E4A73 /* Assets.xcassets */; };
+		6951298222DD64B4002E4A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6951298022DD64B4002E4A73 /* LaunchScreen.storyboard */; };
+		6951298D22DD64B4002E4A73 /* TramTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951298C22DD64B4002E4A73 /* TramTrackerTests.swift */; };
+		6951299822DD64B4002E4A73 /* TramTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951299722DD64B4002E4A73 /* TramTrackerUITests.swift */; };
+		695129B022DD65F0002E4A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 695129AF22DD65F0002E4A73 /* Localizable.strings */; };
+		695129D922DD661C002E4A73 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695129B622DD661C002E4A73 /* String+Localized.swift */; };
+		695129DA22DD661C002E4A73 /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695129B722DD661C002E4A73 /* String+Empty.swift */; };
+		695129DD22DD661C002E4A73 /* UITableView+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695129BD22DD661C002E4A73 /* UITableView+CellRegistration.swift */; };
+		695129DF22DD661C002E4A73 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695129C122DD661C002E4A73 /* Theme.swift */; };
+		69C4734422DEA3630089C4A4 /* NearByViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4734322DEA3620089C4A4 /* NearByViewModelSpec.swift */; };
+		69C4734622DEC2120089C4A4 /* DateFormatterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C4734522DEC2110089C4A4 /* DateFormatterTest.swift */; };
+		69D7706422DD8DBE00378EE1 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D7705B22DD8AD200378EE1 /* Quick.framework */; };
+		69D7706522DD8DCE00378EE1 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D7705A22DD8AD200378EE1 /* Nimble.framework */; };
+		69D88CDE230D69F6008B4905 /* HTTPRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D88CDD230D69F6008B4905 /* HTTPRequestBuilder.swift */; };
+		69D88CE5230D7838008B4905 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694B8F6722DD95C500AD97C2 /* HTTPClient.swift */; };
+		69D88CE7230D7A2B008B4905 /* URLSession+URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D88CE6230D7A2B008B4905 /* URLSession+URLSessionProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6951298922DD64B4002E4A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6951296C22DD64B4002E4A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6951297322DD64B4002E4A73;
+			remoteInfo = TramTracker;
+		};
+		6951299422DD64B4002E4A73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6951296C22DD64B4002E4A73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6951297322DD64B4002E4A73;
+			remoteInfo = TramTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		694B8F3C22DD902600AD97C2 /* Copy Carthage Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				694B8F3E22DD903800AD97C2 /* Nimble.framework in Copy Carthage Frameworks */,
+				694B8F3D22DD903200AD97C2 /* Quick.framework in Copy Carthage Frameworks */,
+			);
+			name = "Copy Carthage Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		694B8F5A22DD959C00AD97C2 /* NearByViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewController.swift; sourceTree = "<group>"; };
+		694B8F6222DD95AE00AD97C2 /* Tram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tram.swift; sourceTree = "<group>"; };
+		694B8F6322DD95AE00AD97C2 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		694B8F6722DD95C500AD97C2 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		694B8F6822DD95C500AD97C2 /* APIEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		694B8F6A22DD95C500AD97C2 /* TokenClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenClient.swift; sourceTree = "<group>"; };
+		694B8F6B22DD95C500AD97C2 /* TramClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramClient.swift; sourceTree = "<group>"; };
+		694B8F7122DD95F400AD97C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NearBy.storyboard; sourceTree = "<group>"; };
+		694B8F7422DD962400AD97C2 /* AppPreferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		694B8F7522DD962400AD97C2 /* DotNetDateConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotNetDateConverter.swift; sourceTree = "<group>"; };
+		694B8F7822DD963200AD97C2 /* TramsNotFoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TramsNotFoundTableViewCell.xib; sourceTree = "<group>"; };
+		694B8F7922DD963200AD97C2 /* TramsNotFoundTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramsNotFoundTableViewCell.swift; sourceTree = "<group>"; };
+		694B8F7A22DD963200AD97C2 /* NearByTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByTableViewCell.xib; sourceTree = "<group>"; };
+		694B8F7B22DD963200AD97C2 /* NearByTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByTableViewCell.swift; sourceTree = "<group>"; };
+		694B8F8122DD964200AD97C2 /* NearByViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewControllerSpec.swift; sourceTree = "<group>"; };
+		694B8F8822DDB5AC00AD97C2 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		694B8F8922DDB5AC00AD97C2 /* ViewController+NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+NavigationBar.swift"; sourceTree = "<group>"; };
+		694B8F8A22DDB5AC00AD97C2 /* ViewController+DisplayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+DisplayError.swift"; sourceTree = "<group>"; };
+		694B8F9122DDB7B600AD97C2 /* Theme+Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme+Main.swift"; sourceTree = "<group>"; };
+		694B8F9322DDB89F00AD97C2 /* UIApplication+StatusBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+StatusBarView.swift"; sourceTree = "<group>"; };
+		694B8F9722DDBE3100AD97C2 /* Mission Gothic Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mission Gothic Regular.otf"; sourceTree = "<group>"; };
+		694B8F9A22DDC5E400AD97C2 /* CountableEnumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountableEnumeration.swift; sourceTree = "<group>"; };
+		694B8F9C22DDC97D00AD97C2 /* NearByViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewModel.swift; sourceTree = "<group>"; };
+		6951297422DD64B4002E4A73 /* TramTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TramTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6951297722DD64B4002E4A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6951297E22DD64B4002E4A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6951298122DD64B4002E4A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6951298322DD64B4002E4A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6951298822DD64B4002E4A73 /* TramTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TramTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6951298C22DD64B4002E4A73 /* TramTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramTrackerTests.swift; sourceTree = "<group>"; };
+		6951298E22DD64B4002E4A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6951299322DD64B4002E4A73 /* TramTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TramTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6951299722DD64B4002E4A73 /* TramTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramTrackerUITests.swift; sourceTree = "<group>"; };
+		6951299922DD64B4002E4A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695129AF22DD65F0002E4A73 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		695129B622DD661C002E4A73 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		695129B722DD661C002E4A73 /* String+Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
+		695129BD22DD661C002E4A73 /* UITableView+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CellRegistration.swift"; sourceTree = "<group>"; };
+		695129C122DD661C002E4A73 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		69C4734322DEA3620089C4A4 /* NearByViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByViewModelSpec.swift; sourceTree = "<group>"; };
+		69C4734522DEC2110089C4A4 /* DateFormatterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterTest.swift; sourceTree = "<group>"; };
+		69D7705A22DD8AD200378EE1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		69D7705B22DD8AD200378EE1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		69D88CDD230D69F6008B4905 /* HTTPRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestBuilder.swift; sourceTree = "<group>"; };
+		69D88CE6230D7A2B008B4905 /* URLSession+URLSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+URLSessionProtocol.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6951297122DD64B4002E4A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951298522DD64B4002E4A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D7706522DD8DCE00378EE1 /* Nimble.framework in Frameworks */,
+				69D7706422DD8DBE00378EE1 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951299022DD64B4002E4A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694B8F6622DD95C500AD97C2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F6822DD95C500AD97C2 /* APIEndpoints.swift */,
+				694B8F6722DD95C500AD97C2 /* HTTPClient.swift */,
+				69D88CDD230D69F6008B4905 /* HTTPRequestBuilder.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		694B8F7322DD962400AD97C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F7522DD962400AD97C2 /* DotNetDateConverter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		694B8F8722DDB5AC00AD97C2 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F8822DDB5AC00AD97C2 /* UIViewController+Additions.swift */,
+				694B8F8922DDB5AC00AD97C2 /* ViewController+NavigationBar.swift */,
+				694B8F8A22DDB5AC00AD97C2 /* ViewController+DisplayError.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		694B8F8E22DDB72D00AD97C2 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F9322DDB89F00AD97C2 /* UIApplication+StatusBarView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		694B8F9922DDC5E400AD97C2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F9A22DDC5E400AD97C2 /* CountableEnumeration.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6951296B22DD64B4002E4A73 = {
+			isa = PBXGroup;
+			children = (
+				6951297622DD64B4002E4A73 /* TramTracker */,
+				695129A622DD6553002E4A73 /* Supporting Files */,
+				6951298B22DD64B4002E4A73 /* TramTrackerTests */,
+				6951299622DD64B4002E4A73 /* TramTrackerUITests */,
+				6951297522DD64B4002E4A73 /* Products */,
+				69D7705922DD8AD200378EE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6951297522DD64B4002E4A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6951297422DD64B4002E4A73 /* TramTracker.app */,
+				6951298822DD64B4002E4A73 /* TramTrackerTests.xctest */,
+				6951299322DD64B4002E4A73 /* TramTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6951297622DD64B4002E4A73 /* TramTracker */ = {
+			isa = PBXGroup;
+			children = (
+				695129A522DD652A002E4A73 /* App */,
+				695129BE22DD661C002E4A73 /* API */,
+				695129B122DD661C002E4A73 /* Extentions */,
+				694B8F7322DD962400AD97C2 /* Helpers */,
+				695129C222DD661C002E4A73 /* NearBy */,
+				695129C022DD661C002E4A73 /* Theme */,
+			);
+			path = TramTracker;
+			sourceTree = "<group>";
+		};
+		6951298B22DD64B4002E4A73 /* TramTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				69C4734522DEC2110089C4A4 /* DateFormatterTest.swift */,
+				69C4734322DEA3620089C4A4 /* NearByViewModelSpec.swift */,
+				694B8F8122DD964200AD97C2 /* NearByViewControllerSpec.swift */,
+				6951298C22DD64B4002E4A73 /* TramTrackerTests.swift */,
+				6951298E22DD64B4002E4A73 /* Info.plist */,
+			);
+			path = TramTrackerTests;
+			sourceTree = "<group>";
+		};
+		6951299622DD64B4002E4A73 /* TramTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6951299722DD64B4002E4A73 /* TramTrackerUITests.swift */,
+				6951299922DD64B4002E4A73 /* Info.plist */,
+			);
+			path = TramTrackerUITests;
+			sourceTree = "<group>";
+		};
+		695129A522DD652A002E4A73 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6951297722DD64B4002E4A73 /* AppDelegate.swift */,
+				694B8F7422DD962400AD97C2 /* AppPreferences.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		695129A622DD6553002E4A73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				695129A822DD6591002E4A73 /* Fonts */,
+				6951298322DD64B4002E4A73 /* Info.plist */,
+				695129AF22DD65F0002E4A73 /* Localizable.strings */,
+				6951298022DD64B4002E4A73 /* LaunchScreen.storyboard */,
+				695129A722DD655E002E4A73 /* Assets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		695129A722DD655E002E4A73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6951297E22DD64B4002E4A73 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		695129A822DD6591002E4A73 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F9722DDBE3100AD97C2 /* Mission Gothic Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		695129B122DD661C002E4A73 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F9922DDC5E400AD97C2 /* Enums */,
+				695129B522DD661C002E4A73 /* Foundation */,
+				694B8F8E22DDB72D00AD97C2 /* UIKit */,
+				695129BC22DD661C002E4A73 /* UITableView */,
+				694B8F8722DDB5AC00AD97C2 /* UIViewController */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		695129B522DD661C002E4A73 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				695129B722DD661C002E4A73 /* String+Empty.swift */,
+				695129B622DD661C002E4A73 /* String+Localized.swift */,
+				69D88CE6230D7A2B008B4905 /* URLSession+URLSessionProtocol.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		695129BC22DD661C002E4A73 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				695129BD22DD661C002E4A73 /* UITableView+CellRegistration.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		695129BE22DD661C002E4A73 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F6A22DD95C500AD97C2 /* TokenClient.swift */,
+				694B8F6B22DD95C500AD97C2 /* TramClient.swift */,
+				694B8F6622DD95C500AD97C2 /* Network */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		695129C022DD661C002E4A73 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				695129C122DD661C002E4A73 /* Theme.swift */,
+				694B8F9122DDB7B600AD97C2 /* Theme+Main.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		695129C222DD661C002E4A73 /* NearBy */ = {
+			isa = PBXGroup;
+			children = (
+				695129C522DD661C002E4A73 /* Controller */,
+				695129C322DD661C002E4A73 /* ViewModel */,
+				695129C722DD661C002E4A73 /* Model */,
+				695129CC22DD661C002E4A73 /* Views */,
+			);
+			path = NearBy;
+			sourceTree = "<group>";
+		};
+		695129C322DD661C002E4A73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F9C22DDC97D00AD97C2 /* NearByViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		695129C522DD661C002E4A73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F5A22DD959C00AD97C2 /* NearByViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		695129C722DD661C002E4A73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F6322DD95AE00AD97C2 /* Token.swift */,
+				694B8F6222DD95AE00AD97C2 /* Tram.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		695129CC22DD661C002E4A73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				694B8F7022DD95F400AD97C2 /* NearBy.storyboard */,
+				694B8F7B22DD963200AD97C2 /* NearByTableViewCell.swift */,
+				694B8F7A22DD963200AD97C2 /* NearByTableViewCell.xib */,
+				694B8F7922DD963200AD97C2 /* TramsNotFoundTableViewCell.swift */,
+				694B8F7822DD963200AD97C2 /* TramsNotFoundTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		69D7705922DD8AD200378EE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69D7705A22DD8AD200378EE1 /* Nimble.framework */,
+				69D7705B22DD8AD200378EE1 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6951297322DD64B4002E4A73 /* TramTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6951299C22DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTracker" */;
+			buildPhases = (
+				6951297022DD64B4002E4A73 /* Sources */,
+				6951297122DD64B4002E4A73 /* Frameworks */,
+				6951297222DD64B4002E4A73 /* Resources */,
+				69D7706222DD8C5E00378EE1 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TramTracker;
+			productName = TramTracker;
+			productReference = 6951297422DD64B4002E4A73 /* TramTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6951298722DD64B4002E4A73 /* TramTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6951299F22DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTrackerTests" */;
+			buildPhases = (
+				6951298422DD64B4002E4A73 /* Sources */,
+				6951298522DD64B4002E4A73 /* Frameworks */,
+				6951298622DD64B4002E4A73 /* Resources */,
+				694B8F3C22DD902600AD97C2 /* Copy Carthage Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6951298A22DD64B4002E4A73 /* PBXTargetDependency */,
+			);
+			name = TramTrackerTests;
+			productName = TramTrackerTests;
+			productReference = 6951298822DD64B4002E4A73 /* TramTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6951299222DD64B4002E4A73 /* TramTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695129A222DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTrackerUITests" */;
+			buildPhases = (
+				6951298F22DD64B4002E4A73 /* Sources */,
+				6951299022DD64B4002E4A73 /* Frameworks */,
+				6951299122DD64B4002E4A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6951299522DD64B4002E4A73 /* PBXTargetDependency */,
+			);
+			name = TramTrackerUITests;
+			productName = TramTrackerUITests;
+			productReference = 6951299322DD64B4002E4A73 /* TramTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6951296C22DD64B4002E4A73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					6951297322DD64B4002E4A73 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6951298722DD64B4002E4A73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6951297322DD64B4002E4A73;
+					};
+					6951299222DD64B4002E4A73 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6951297322DD64B4002E4A73;
+					};
+				};
+			};
+			buildConfigurationList = 6951296F22DD64B4002E4A73 /* Build configuration list for PBXProject "TramTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6951296B22DD64B4002E4A73;
+			productRefGroup = 6951297522DD64B4002E4A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6951297322DD64B4002E4A73 /* TramTracker */,
+				6951298722DD64B4002E4A73 /* TramTrackerTests */,
+				6951299222DD64B4002E4A73 /* TramTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6951297222DD64B4002E4A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694B8F7222DD95F400AD97C2 /* NearBy.storyboard in Resources */,
+				695129B022DD65F0002E4A73 /* Localizable.strings in Resources */,
+				694B8F9822DDBE8A00AD97C2 /* Mission Gothic Regular.otf in Resources */,
+				6951298222DD64B4002E4A73 /* LaunchScreen.storyboard in Resources */,
+				694B8F7C22DD963200AD97C2 /* TramsNotFoundTableViewCell.xib in Resources */,
+				694B8F7E22DD963200AD97C2 /* NearByTableViewCell.xib in Resources */,
+				6951297F22DD64B4002E4A73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951298622DD64B4002E4A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951299122DD64B4002E4A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69D7706222DD8C5E00378EE1 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6951297022DD64B4002E4A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				695129DA22DD661C002E4A73 /* String+Empty.swift in Sources */,
+				694B8F8D22DDB5AC00AD97C2 /* ViewController+DisplayError.swift in Sources */,
+				694B8F6F22DD95C500AD97C2 /* TramClient.swift in Sources */,
+				694B8F6E22DD95C500AD97C2 /* TokenClient.swift in Sources */,
+				695129D922DD661C002E4A73 /* String+Localized.swift in Sources */,
+				694B8F6522DD95AE00AD97C2 /* Token.swift in Sources */,
+				694B8F8B22DDB5AC00AD97C2 /* UIViewController+Additions.swift in Sources */,
+				694B8F9222DDB7B600AD97C2 /* Theme+Main.swift in Sources */,
+				695129DD22DD661C002E4A73 /* UITableView+CellRegistration.swift in Sources */,
+				694B8F6422DD95AE00AD97C2 /* Tram.swift in Sources */,
+				694B8F7F22DD963200AD97C2 /* NearByTableViewCell.swift in Sources */,
+				694B8F7722DD962400AD97C2 /* DotNetDateConverter.swift in Sources */,
+				69D88CDE230D69F6008B4905 /* HTTPRequestBuilder.swift in Sources */,
+				69D88CE5230D7838008B4905 /* HTTPClient.swift in Sources */,
+				694B8F9422DDB89F00AD97C2 /* UIApplication+StatusBarView.swift in Sources */,
+				694B8F7D22DD963200AD97C2 /* TramsNotFoundTableViewCell.swift in Sources */,
+				6951297822DD64B4002E4A73 /* AppDelegate.swift in Sources */,
+				694B8F9B22DDC5E400AD97C2 /* CountableEnumeration.swift in Sources */,
+				694B8F5B22DD959C00AD97C2 /* NearByViewController.swift in Sources */,
+				69D88CE7230D7A2B008B4905 /* URLSession+URLSessionProtocol.swift in Sources */,
+				694B8F8C22DDB5AC00AD97C2 /* ViewController+NavigationBar.swift in Sources */,
+				694B8F7622DD962400AD97C2 /* AppPreferences.swift in Sources */,
+				695129DF22DD661C002E4A73 /* Theme.swift in Sources */,
+				694B8F9D22DDC97D00AD97C2 /* NearByViewModel.swift in Sources */,
+				694B8F6D22DD95C500AD97C2 /* APIEndpoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951298422DD64B4002E4A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69C4734622DEC2120089C4A4 /* DateFormatterTest.swift in Sources */,
+				69C4734422DEA3630089C4A4 /* NearByViewModelSpec.swift in Sources */,
+				694B8F8322DD964300AD97C2 /* NearByViewControllerSpec.swift in Sources */,
+				6951298D22DD64B4002E4A73 /* TramTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6951298F22DD64B4002E4A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6951299822DD64B4002E4A73 /* TramTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6951298A22DD64B4002E4A73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6951297322DD64B4002E4A73 /* TramTracker */;
+			targetProxy = 6951298922DD64B4002E4A73 /* PBXContainerItemProxy */;
+		};
+		6951299522DD64B4002E4A73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6951297322DD64B4002E4A73 /* TramTracker */;
+			targetProxy = 6951299422DD64B4002E4A73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		694B8F7022DD95F400AD97C2 /* NearBy.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694B8F7122DD95F400AD97C2 /* Base */,
+			);
+			name = NearBy.storyboard;
+			sourceTree = "<group>";
+		};
+		6951298022DD64B4002E4A73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6951298122DD64B4002E4A73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6951299A22DD64B4002E4A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6951299B22DD64B4002E4A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6951299D22DD64B4002E4A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6951299E22DD64B4002E4A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		695129A022DD64B4002E4A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TramTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TramTracker.app/TramTracker";
+			};
+			name = Debug;
+		};
+		695129A122DD64B4002E4A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TramTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TramTracker.app/TramTracker";
+			};
+			name = Release;
+		};
+		695129A322DD64B4002E4A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				INFOPLIST_FILE = TramTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TramTracker;
+			};
+			name = Debug;
+		};
+		695129A422DD64B4002E4A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 482LCHR832;
+				INFOPLIST_FILE = TramTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.nettrinity.TramTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TramTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6951296F22DD64B4002E4A73 /* Build configuration list for PBXProject "TramTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6951299A22DD64B4002E4A73 /* Debug */,
+				6951299B22DD64B4002E4A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6951299C22DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6951299D22DD64B4002E4A73 /* Debug */,
+				6951299E22DD64B4002E4A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6951299F22DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				695129A022DD64B4002E4A73 /* Debug */,
+				695129A122DD64B4002E4A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695129A222DD64B4002E4A73 /* Build configuration list for PBXNativeTarget "TramTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				695129A322DD64B4002E4A73 /* Debug */,
+				695129A422DD64B4002E4A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6951296C22DD64B4002E4A73 /* Project object */;
+}

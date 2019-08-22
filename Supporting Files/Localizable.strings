@@ -1,0 +1,28 @@
+// MARK: - NearBy
+
+"ALERT.OK" = "OK";
+"ALERT.OOPS!" = "Oops!";
+
+"NEAR.BY.NAVIGATION.TITLE" = "NearBy";
+
+"NORTH.TRAM.STOPS" = "North Tram Stops";
+"SOUTH.TRAM.STOPS" = "South Tram Stops";
+
+"NO.UPCOMING.TRAMS" = "No upcoming trams. Pull to fetch";
+
+"ERROR.FETCHING.TOKEN" ="Error occured while fetching the token, please try to reload!";
+"ERROR.FETCHING.NORTH.TRAMS" = "Error occured while loading the north trams, please try to reload!";
+"ERROR.FETCHING.SOUTH.TRAMS" = "Error occured while loading the south trams, please try to reload!";
+
+
+// MARK: - HTTPError
+
+// MARK: Title
+
+"HTTPERROR.GENERAL.TITLE" = "Oops!";
+"HTTPERROR.NO_NETWORK.TITLE" = "No network connection";
+
+// MARK: Message
+
+"HTTPERROR.GENERAL.MESSAGE" = "Something went wrong.";
+"HTTPERROR.NO_NETWORK.MESSAGE" = "Please try again later";
