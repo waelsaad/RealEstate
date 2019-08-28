@@ -20,5 +20,5 @@ struct Token: Codable {
 
 // New
 struct TokenServerResponse: Codable {
-    var responseObject: Token
+    var responseObject: [Token]
 }

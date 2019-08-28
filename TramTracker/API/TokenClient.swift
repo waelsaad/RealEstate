@@ -45,7 +45,14 @@ class TokenClient {
                     //print(String(bytes: data, encoding: .utf8)!)
                     let response = try decoder.decode(TokenServerResponse.self, from: data)
                     let data = response.responseObject
-                    completion(.success(data))
+                    
+                    if let token = data.first {
+                        completion(.success(token))
+                    } else {
+                        // empty token
+                        completion(.failure(HTTPError.unknown))
+                    }
+                    
                 } catch let error {
                     print(error)
                     // This is a parse error
